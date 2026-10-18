@@ -1,0 +1,22 @@
+
+title: "Dariusz Zabrzeński | AI, Cloud & Architecture"
+description: "Exploring AI engineering, cloud platforms, software architecture, and the systems behind modern technology."
+url: "https://7h4r05.github.io"
+baseurl: "/"
+
+
+lang: en
+timezone: Europe/Warsaw
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+header_pages:
+  - about.md
+
+remote_theme: pages-themes/midnight@v0.2.0
+
+plugins:
+- jekyll-remote-theme
