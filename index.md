@@ -1,3 +1,26 @@
+# Latest posts
+
+
+{% assign posts = site.posts %}
+
+{% if posts.size > 0 %}
+{% for post in posts %}
+
+## [{{ post.title }}]({{ post.url | relative_url }})
+
+<small>{{ post.date | date: "%Y.%m.%d" }}</small>
+
+{{ post.excerpt | strip_html | truncate: 200 }}
+
+[**Read more →**]({{ post.url | relative_url }})
+
+---
+
+{% endfor %}
+{% endif %}
+
+
+
 # Welcome to My Blog!
 
 Welcome to my blog, where I share my thoughts, experiences, and practical insights on AI, cloud computing, and software architecture.

@@ -8,6 +8,7 @@ baseurl: "/"
 lang: en
 timezone: Europe/Warsaw
 markdown: kramdown
+mermaid: true
 
 plugins:
   - jekyll-feed
