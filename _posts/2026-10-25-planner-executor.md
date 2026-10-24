@@ -13,7 +13,7 @@ Whenever I need to write Terraform or Azure ARM templates, I find myself looking
 
 So, I built a small tool to help me with a few recurring tasks: checking what infrastructure already exists and generating code for resources I want to add. For simple lookups, plugging such an MCP server into your coding agent like Claude Code or Codex is enough. The pattern brings more value once you chain more steps, like plan, generate and validate, and that pattern is the focus of this post.
 
-Note: To keep this post focused on the agent architecture, the implementation will be simplified and won't cover security-related aspects. Full code can be downloaded [here](https://github.com/7h4r05/blog-2026-10-25-planner-executor-/tree/main)
+Note: To keep this post focused on the agent architecture, the implementation will be simplified and won't cover security-related aspects. Full code can be downloaded [here](https://github.com/7h4r05/blog-2026-10-25-planner-executor)
 
 
 ## The problem
@@ -216,7 +216,7 @@ sequenceDiagram
 
 ## Implementation
 
-Since the architecture and use case are well defined, let's do the implementation. The MCP Server will be created using TypeScript and to keep things simple, for the agents let's use Ollama, Python and LangGraph. In this post you will find only partial snippets of the code, but you can download the whole repository [here](https://github.com/7h4r05/blog-2026-10-25-planner-executor-/tree/main).
+Since the architecture and use case are well defined, let's do the implementation. The MCP Server will be created using TypeScript and to keep things simple, for the agents let's use Ollama, Python and LangGraph. In this post you will find only partial snippets of the code, but you can download the whole repository [here](https://github.com/7h4r05/blog-2026-10-25-planner-executor).
 
 Prerequisites:
 
