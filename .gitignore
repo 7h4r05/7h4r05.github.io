@@ -4,4 +4,5 @@ _site/
 .bundle/
 vendor/
 index.html
-
+assets
+.ruby-version
